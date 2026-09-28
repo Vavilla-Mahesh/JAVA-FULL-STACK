@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinayaka Chavithi Invitation</title>
+    <!-- Importing a traditional festive font style -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    
+    <style>
+        /* Base Reset & Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #4a0000 0%, #2b0000 100%);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Invitation Card Container */
+        .invitation-card {
+            background: #5c0606;
+            max-width: 500px;
+            width: 100%;
+            border: 5px double #ffd700;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Traditional Corner Decorations */
+        .invitation-card::before, .invitation-card::after {
+            content: "✦";
+            position: absolute;
+            color: #ffd700;
+            font-size: 24px;
+        }
+        .invitation-card::before { top: 10px; left: 15px; }
+        .invitation-card::after { top: 10px; right: 15px; }
+
+        /* Traditional Mantra Header */
+        .mantra {
+            font-style: italic;
+            color: #ffcc00;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        /* CSS Ganesha Motif Icon Placeholder */
+        .ganesha-logo {
+            font-size: 3.5rem;
+            margin: 10px 0;
+            color: #ffd700;
+            text-shadow: 0 0 10px rgba(255,215,0,0.5);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        /* Typography */
+        h1 {
+            font-family: 'Cinzel Decorative', serif;
+            color: #ffd700;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px #000;
+        }
+        .invitation-text {
+            font-size: 1rem;
+            color: #f4e3b1;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+        .highlight {
+            color: #ffd700;
+            font-weight: 600;
+        }
+
+        /* Event Details Box */
+        .details-panel {
+            background: rgba(0, 0, 0, 0.25);
+            border: 1px dashed #ffd700;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+        .detail-item {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: baseline;
+        }
+        .detail-item:last-child {
+            margin-bottom: 0;
+        }
+        .label {
+            color: #ffd700;
+            font-weight: 600;
+            width: 80px;
+            flex-shrink: 0;
+        }
+        .value {
+            color: #fff;
+        }
+
+        /* Countdown Timer Section */
+        .timer-container {
+            margin-bottom: 25px;
+        }
+        .timer-title {
+            font-size: 0.85rem;
+            color: #ffcc00;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 10px;
+        }
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .time-box {
+            background: #730909;
+            border: 1px solid #ffd700;
+            border-radius: 5px;
+            padding: 8px;
+            min-width: 60px;
+        }
+        .time-box span {
+            display: block;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #ffd700;
+        }
+        .time-box label {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            color: #f4e3b1;
+        }
+
+        /* Interactive RSVP Form */
+        .rsvp-section button {
+            background: linear-gradient(180deg, #ffd700 0%, #cca100 100%);
+            color: #4a0000;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+        }
+        .rsvp-section button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(255,215,0,0.4);
+        }
+        .status-message {
+            margin-top: 12px;
+            font-size: 0.9rem;
+            color: #4cd137;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="invitation-card">
+        <!-- Traditional Sanskrit Mantra -->
+        <p class="mantra">|| श्री गणेशाय नमः ||</p>
+        
+        <!-- Divine Symbol / Emoji Icon Placeholder -->
+        <div class="ganesha-logo">🕉️</div>
+        
+        <h1>Vinayaka Chavithi</h1>
+        <p class="invitation-text">
+            We cordially invite you and your family to join us in welcoming <span class="highlight">Lord Ganesha</span> into our hearts and home. Let us celebrate the festival of wisdom, prosperity, and auspicious beginnings together.
+        </p>
+
+        <!-- Event Logistics Table/Panel -->
+        <div class="details-panel">
+            <div class="detail-item">
+                <span class="label">Date:</span>
+                <span class="value">September 15, 2026</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Time:</span>
+                <span class="value">Ganesh Sthapana & Pooja at 9:00 AM onwards</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Venue:</span>
+                <span class="value">Our Residence, Divine Villa, Plot No. 108, Jubilee Hills, Hyderabad.</span>
+            </div>
+        </div>
+
+        <!-- Live Countdown Timer Component -->
+        <div class="timer-container">
+            <p class="timer-title">Festivities Begin In</p>
+            <div class="countdown">
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <label>Days</label>
+                </div>
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <label>Hrs</label>
+                </div>
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <label>Mins</label>
+                </div>
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <label>Secs</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive RSVP Element -->
+        <div class="rsvp-section">
+            <button onclick="acceptInvitation()">Accept Invitation (RSVP)</button>
+            <p id="rsvpStatus" class="status-message">✨ Thank you! We look forward to your divine presence.</p>
+        </div>
+    </div>
+
+    <!-- Live Event Logic Scripts -->
+    <script>
+        // Set the countdown date targeting the puja start window
+        const targetDate = new Date("September 15, 2026 09:00:00").getTime();
+
+        const timerInterval = setInterval(function() {
+            const now = new Date().getTime();
+            const difference = targetDate - now;
+
+            if (difference < 0) {
+                clearInterval(timerInterval);
+                document.querySelector(".timer-title").innerText = "The Auspicious Celebrations Have Begun!";
+                document.querySelector(".countdown").style.display = "none";
+                return;
+            }
+
+            // Time math transformations
+            const d = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const h = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const s = Math.floor((difference % (1000 * 60)) / 1000);
+
+            // Print values to viewport
+            document.getElementById("days").innerText = d < 10 ? "0" + d : d;
+            document.getElementById("hours").innerText = h < 10 ? "0" + h : h;
+            document.getElementById("minutes").innerText = m < 10 ? "0" + m : m;
+            document.getElementById("seconds").innerText = s < 10 ? "0" + s : s;
+        }, 1000);
+
+        // Interactive button reaction function
+        function acceptInvitation() {
+            const msg = document.getElementById("rsvpStatus");
+            msg.style.display = "block";
+            msg.style.animation = "fadeIn 1s ease";
+        }
+    </script>
+</body>
+</html>
